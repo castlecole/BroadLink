@@ -45,15 +45,3 @@ The <a href='https://beckyricha.github.io/Broadlink-RM-SmartThings-Alexa/RM%20Br
 <li><a href='https://beckyricha.github.io/Broadlink-RM-SmartThings-Alexa/RM%20Bridge%20Cloud%20Readme.html'>RM Bridge Cloud readme</a></li>
 </ul>
 I also had a functioning version that used RM Tasker via the cloud, but have not recreated and tested it for publication because of the security issues I encountered and the difficulty integrating more than one Broadlink with this app.  If you want this version to play with, it's on the repo but not supported.  Find it <a href='https://github.com/beckyricha/Broadlink-RM-SmartThings-Alexa/blob/master/tasker_cloud_version'>here</a>.
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89762317-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
