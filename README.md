@@ -27,19 +27,19 @@ Intermediate. Need a comfort level with digging through things that appear compl
 
 ## Options and Files on this site:
 
-The <a href='https://castlecole.github.io/Broadlink/RM%20Tasker%20LAN%20ReadMe.html'>RM Tasker Version with local control</a> was published first, and uses the following files:
+The <a href='https://github.com/castlecole/Broadlink/RM%20Tasker%20LAN%20ReadMe.html'>RM Tasker Version with local control</a> was published first, and uses the following files:
 <ul>
 <li><a href='https://github.com/castlecole/Broadlink/blob/master/Broadlink%20LAN%20SmartApp'>Broadlink LAN SmartApp</a></li>
 <li><a href='https://github.com/castlecole/Broadlink/blob/master/Broadlink%20Manual%20device%20entry'>Broadlink Manual device entry</a></li>
 <li><a href='https://github.com/castlecole/Broadlink/blob/master/Broadlinkswitch%20device%20handler'>Broadlinkswitch device handler</a></li>
-<li><a href='https://castlecole.github.io/Broadlink/RM%20Tasker%20LAN%20ReadMe.html'> RM Tasker LAN ReadMe </a></li>
+<li><a href='https://github.com/castlecole/Broadlink/RM%20Tasker%20LAN%20ReadMe.html'> RM Tasker LAN ReadMe </a></li>
 </ul>
-The <a href='https://castlecole.github.io/Broadlink/RM%20Bridge%20LAN%20Readme.html'>RM Bridge version with local control</a> uses the following files:
+The <a href='https://github.com/castlecole/Broadlink/RM%20Bridge%20LAN%20Readme.html'>RM Bridge version with local control</a> uses the following files:
 <ul>
 <li><a href='https://github.com/castlecole/Broadlink/blob/master/Broadlink%20RM%20Bridge%20Switch%20LAN'>Broadlink RM Bridge Switch LAN</a></li>
-<li><a href='https://castlecole.github.io/Broadlink/RM%20Bridge%20LAN%20Readme.html'>RM Bridge LAN readme</a></li>
+<li><a href='https://github.com/castlecole/Broadlink/RM%20Bridge%20LAN%20Readme.html'>RM Bridge LAN readme</a></li>
 </ul>
-The <a href='https://castlecole.github.io/Broadlink/RM%20Bridge%20Cloud%20Readme.html'>version with cloud control</a> uses the following files:
+The <a href='https://github.com/castlecole/Broadlink/RM%20Bridge%20Cloud%20Readme.html'>version with cloud control</a> uses the following files:
 <ul>
 <li><a href='https://github.com/castlecole/Broadlink/blob/master/RM%20Bridge%20Switch%20Cloud'>Broadlink RM Bridge Switch Cloud</a></li>
 <li><a href='https://castlecole.github.io/Broadlink/RM%20Bridge%20Cloud%20Readme.html'>RM Bridge Cloud readme</a></li>
