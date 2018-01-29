@@ -20,16 +20,31 @@
 metadata {
 	
     definition (name: "BroadLink LAN Switch", namespace: "castlecole", author: "BeckyR") {
-		    capability "Switch"
-		    command "onPhysical"
-		    command "offPhysical"
-	  }
+	capability "Switch"
+        capability "Actuator"
+        capability "Configuration"
+        capability "Refresh"
+
+	command "onPhysical"
+	command "offPhysical"
+    }
+
+    // simulator metadata
+    simulator {
+        // status messages
+        status "on": "on/off: 1"
+        status "off": "on/off: 0"
+
+        // reply messages
+        reply "zcl on-off on": "on/off: 1"
+        reply "zcl on-off off": "on/off: 0"
+    }
 
     tiles(scale: 2) {
         multiAttributeTile(name:"switch", type: "lighting", width: 6, height: 4, canChangeIcon: false){
             tileAttribute ("device.switch", key: "PRIMARY_CONTROL") { 
-                attributeState "on", label:"", action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_On.png", backgroundColor:"#359148", nextState:"turningOff"
-                attributeState "off", label:"", action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_Off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
+                attributeState "on", label:"", action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_on.png", backgroundColor:"#359148", nextState:"turningOff"
+                attributeState "off", label:"", action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
                 attributeState "turningOn", label:'\n\n Turning On', action:"switch.off", icon:"", backgroundColor:"#359148", nextState:"turningOff"
                 attributeState "turningOff", label:'\n\n Turning Off', action:"switch.on", icon:"", backgroundColor:"#00a0dc", nextState:"turningOn"
             }
@@ -46,16 +61,15 @@ metadata {
 
         multiAttributeTile(name:"switch2", type: "lighting", width: 6, height: 4, canChangeIcon: false){
             tileAttribute ("device.switch", key: "PRIMARY_CONTROL") { 
-                attributeState "on", label:'${name}', action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_On.png", backgroundColor:"#359148", nextState:"turningOff"
-                attributeState "off", label:'${name}', action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_Off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
-                attributeState "turningOn", label:'${name}', action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_On.png", backgroundColor:"#359148", nextState:"turningOff"
-                attributeState "turningOff", label:'${name}', action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/Power_Off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
+                attributeState "on", label:'${name}', action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_on.png", backgroundColor:"#359148", nextState:"turningOff"
+                attributeState "off", label:'${name}', action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
+                attributeState "turningOn", label:'${name}', action:"switch.off", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_on.png", backgroundColor:"#359148", nextState:"turningOff"
+                attributeState "turningOff", label:'${name}', action:"switch.on", icon:"https://raw.githubusercontent.com/castlecole/Xiaomi/master/light_bulb_off.png", backgroundColor:"#00a0dc", nextState:"turningOn"
             }
-	      }
+	}
 	    
-	      main (["switch2"])
+	main(["switch2"])
         details(["switch", "blank", "refresh"])
-      
     }
 }
 
